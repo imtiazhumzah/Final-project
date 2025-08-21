@@ -31,11 +31,17 @@ It is trained on the **HAM10000 dataset** and provides **predictions with confid
 ## 📂 Repository Structure
 
 DermAI/
+
 ├─ dermAI.py # Main Streamlit app
+
 ├─ requirements.txt # Python dependencies
+
 ├─ docs/
+
 │ ├─ screenshot.png # UI preview
+
 │ └─ results.png # Example results/confusion matrix
+
 └─ README.md
 
 
