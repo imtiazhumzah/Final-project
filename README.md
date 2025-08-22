@@ -139,14 +139,5 @@ Hugging Face Transformers
 Streamlit Team
 
 
-## 📸 Screenshots
 
-### Home Page
-![Home Page](assets/Front page.png)
-
-### Upload Image
-![Upload Image](assets/uploaded image.png)
-
-### Prediction Result
-![Prediction Result](assets/predicitons.png)
 
