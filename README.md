@@ -3,18 +3,18 @@
 DermAI is a **Streamlit-based AI app** that classifies skin lesions into **7 categories** using a fine-tuned [ConvNeXtV2 model](https://huggingface.co/ALM-AHME/convnextv2-large-1k-224-finetuned-Lesion-Classification-HAM10000-AH-60-20-20).  
 It is trained on the **HAM10000 dataset** and provides **predictions with confidence scores**, **educational insights**, and an **exportable report**.  
 
-⚠️ **Disclaimer:** This tool is for **research and educational purposes only**. It is **not a substitute** for professional medical diagnosis.
+**Disclaimer:** This tool is for **research and educational purposes only**. It is **not a substitute** for professional medical diagnosis.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 📂 Upload dermoscopic images (`.jpg`, `.jpeg`, `.png`)  
-- 🩺 **AI Predictions** with confidence scores  
-- 📖 **Educational explanations** for each disease class (layman-friendly)  
-- 📝 **Downloadable report** with prediction results  
-- 🎨 User-friendly Streamlit UI  
-- ☁️ Deployable via **Colab + ngrok** or **Streamlit Cloud**  
+- Upload dermoscopic images (`.jpg`, `.jpeg`, `.png`)  
+- **AI Predictions** with confidence scores  
+- **Educational explanations** for each disease class (layman-friendly)  
+- **Downloadable report** with prediction results  
+- User-friendly Streamlit UI  
+- Deployable via **Colab + ngrok** or **Streamlit Cloud**  
 
 ---
 
@@ -66,77 +66,49 @@ ngrok.set_auth_token("<YOUR_AUTH_TOKEN>")
 public_url = ngrok.connect('8501')
 print(f"Streamlit app is live at: {public_url}")
 
-🧠 Model Information
-
+Model Information
 Base Model: ConvNeXtV2 Large
-
 Dataset: HAM10000
-
 Classes:
-
 mel – Melanoma
-
 nv – Melanocytic Nevus
-
 bcc – Basal Cell Carcinoma
-
 akiec – Actinic Keratoses
-
 bkl – Benign Keratosis
-
 df – Dermatofibroma
-
 vasc – Vascular Lesions
 
+
 📊 Example Prediction
-
 Input:
-
+Upload an image related to skin lesions
 
 Output:
-
-🩺 Prediction: Melanoma
-
-🎯 Confidence: 92.14%
-
-📖 Description: “Melanoma is a serious and aggressive form of skin cancer...”
+Prediction: Melanoma
+Confidence: 92.14%
+Description: “Melanoma is a serious and aggressive form of skin cancer...”
 
 
 🛣️ Roadmap (Planned Features)
 
- 🔥 Grad-CAM visualization → highlight lesion areas influencing the decision
-
- 🌍 Multilingual support (English, German, French, Urdu)
-
- 📲 Mobile-friendly UI → deploy as PWA or TFLite model for offline use
-
- 📦 Cloud hosting → deploy on Streamlit Cloud / Hugging Face Spaces
-
- ⚖️ Bias & fairness analysis → evaluate across skin tones and demographics
-
- 🛡️ Privacy-first mode → ensure no image is stored after inference
+ Grad-CAM visualization → highlight lesion areas influencing the decision
+ Multilingual support (English, German, French, Urdu)
+ Mobile-friendly UI → deploy as PWA or TFLite model for offline use
+ Cloud hosting → deploy on Streamlit Cloud / Hugging Face Spaces
+ Bias & fairness analysis → evaluate across skin tones and demographics
+ Privacy-first mode → ensure no image is stored after inference
 
 
 🙌 Contributing
 
 We welcome contributions! To contribute:
 
-Fork the repo
-
-Create a feature branch (git checkout -b feature-x)
-
-Commit changes and push
-
-Submit a Pull Request 🚀
-
 
 👏 Acknowledgements
 
-HAM10000 Dataset
-
-Hugging Face Transformers
-
-Streamlit Team
+- HAM10000 Dataset
+- Hugging Face Transformers
+- Streamlit Team
 
 
 
